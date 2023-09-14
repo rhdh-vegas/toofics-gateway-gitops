@@ -1,0 +1,15 @@
+app:
+  name: toofics-poi-gateway-app
+  namespace: toofics
+  cluster: .apps.rosa-bvg5j.wov7.p1.openshiftapps.com
+
+git:
+  branch: main
+  repo: https://github.com/rhdh-vegas/toofics-gateway
+  org: rhdh-vegas
+  name: toofics-gateway
+
+image:
+  host: image-registry.openshift-image-registry.svc:5000
+  name: toofics/poi-gateway-app
+  tag: latest
